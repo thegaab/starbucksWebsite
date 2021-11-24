@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/img/logo.png">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="/img/logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Oque há de novo</a></li>
+                <li><a href="https://www.google.com/search?tbs=lf:1,lf_ui:4&tbm=lcl&sxsrf=AOaemvLCbeK7JJqXBtGWnR3xBTtBrBiWNA:1637782275323&q=lojas+starbucks&rflfq=1&num=10&ved=2ahUKEwj0j_W13rH0AhUNHrkGHSCNDdIQtgN6BAghEAQ#rlfi=hd:;si:;mv:[[-23.4117693,-46.1884259],[-23.682174900000003,-46.8041725]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!2m1!1e3!3sIAE,lf:1,lf_ui:4" target="_blank">Encontre uma loja</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>A Crack in the mug<span> Starbucks</span></h2>
+                <p>Whether you're searching for something new to warm your mug,
+                   seeking the best brew method for your favorite blend or exploring
+                   our rarest offerings, you’ve come to the right place.</p>
+                <a href="#">Learn </a>    
+            </div>
+            <div class="imgBox">
+                <img src="/img/img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="/img/thumb1.png" onclick="imgSlider('/img/img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="/img/thumb2.png" onclick="imgSlider('/img/img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="/img/thumb4.png" onclick="imgSlider('/img/img4.png');changeCircleColor('#e0c963')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="/img/facebook.png"></a></li>
+            <li><a href="#"><img src="/img/twitter.png"></a></li>
+            <li><a href="#"><img src="/img/instagram.png"></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function changeObjectColor(color){
+            const circle = document.querySelector('.object');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
